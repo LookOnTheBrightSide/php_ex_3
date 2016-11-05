@@ -1,0 +1,226 @@
+*{
+	margin: 0;
+	padding: 0;
+	color: rgb(45,45,45);
+	box-sizing: border-box;
+	font-family: "Lato", Arial;
+	font-size: 14px;
+}
+h1{
+	font-size: 1.6rem;
+}
+h2{
+	font-size: 1.4rem;
+}
+h3{
+	font-size: 1.3rem;
+}
+h4{
+	font-size: 1.2rem;
+}
+h5{
+	font-size: 1.1rem;
+}h6{
+	font-size: 1rem;
+}
+body{
+	background-color: whitesmoke;
+	min-height: 100vh;
+}
+/* Nvigation */
+nav{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0.5rem 2rem;
+	margin-bottom: 1rem;
+	background-color: #774ed6;
+}
+nav a{
+	background-color: rgba(90, 55, 55, 0.24);
+	color: white;
+	text-transform: uppercase;
+	padding: 0.5rem 1rem;
+	text-decoration: none;
+	border-radius: 3px;
+	border-top: 1px solid transparent;
+}
+nav a:hover{
+	background-color: rgba(90, 55, 55, 0.7);
+	border-top: 1px solid white;
+}
+footer{
+	margin-top: 2rem;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0.5rem 2rem;
+	background-color: rgb(45,45,45);
+}
+footer a{
+	background-color: rgba(90, 55, 55, 0.24);
+	color: white;
+	text-transform: uppercase;
+	padding: 0.5rem 1rem;
+	text-decoration: none;
+	border-radius: 3px;
+	border-bottom: 1px solid transparent;
+	font-size: 0.8rem;
+}
+footer a:hover{
+	background-color: rgba(90, 55, 55, 0.7);
+	border-bottom: 1px solid white;
+}
+.top{
+	background-color: white;
+	padding: 1rem 0;
+}
+.top h1{
+	text-align: center;
+}
+.wrap{
+	margin: 0 auto;
+}
+.wrap{
+	width: 90%;
+}
+.offer{
+	display: flex;
+	flex-wrap: wrap;
+	margin:-1rem 0 0 -1rem;
+}
+.product{
+	font-weight: 600;
+	display: block;
+	text-align: center;
+	font-size: 1.4rem;
+	margin: 2rem 0;
+}
+.description{
+	font-size: 1.2rem;
+}
+.item:last-child .description{
+	display: block;
+	text-align: left;
+	max-width: 40%;
+	margin-left: auto;
+	margin-right: auto;
+}
+.item{
+	padding: 1rem;
+	margin-bottom: 0.5rem;
+	background-color: white;
+	display: inline-block;
+	margin:1rem 0 0 1rem;
+	flex-grow: 1;
+	width: 30%;
+	border-top: 4px solid rebeccapurple;
+}
+.image{
+	padding: 5rem;
+}
+.image:nth-of-type(1){
+	/* background-color: #c5e4e3; */
+	/* background-color: rgba(255, 238, 0, 0.3); */
+	width: 140px;
+	height: 140px;
+	margin-left: auto;
+	margin-right: auto;
+}
+#Motorcycles{
+	background: url("img/motorcycle.svg") no-repeat center;
+}
+#Planes{
+	background: url("img/airplane.svg") no-repeat center;
+}
+#Ships{
+	background: url("img/boat.svg") no-repeat center;
+}
+#Trains{
+	background: url("img/train.svg") no-repeat center;
+}
+div[id='Trucks and Buses']{
+	background: url("img/bus.svg") no-repeat center;
+}
+div[id='Vintage Cars']{
+	background: url("img/classic-car.svg") no-repeat center;
+}
+div[id='Classic Cars']{
+	background: url("img/car.svg") no-repeat center;
+}
+table{
+	width: 100%;
+}
+th{
+	color: rebeccapurple;
+	font-weight: 800;
+	font-size: 1.4rem;
+}
+th,
+td{
+	border-bottom: 1px solid #ddd;
+	padding: 0.5rem;
+}
+td{
+font-size: 1.2rem;
+}
+#main_table{
+	background-color: white;
+	overflow-x: auto !important;
+	overflow-y: scroll;
+	min-height: 70vh;
+}
+.choose_section{
+	margin: 1.5rem 0;
+}
+.product_form{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 1rem;
+	background-color: white;
+}
+.place_holder{
+	background-color: white;
+	display: flex;
+	min-height: 80vh;
+	justify-content: center;
+	align-items: center;
+}
+.place_holder p{
+	color: rebeccapurple;
+	text-transform: uppercase;
+	font-size: 2rem;
+}
+form button{
+	padding: 0.5rem 1.2rem;
+	background-color: rebeccapurple;
+	color: white;
+	width: 20%;
+}
+select, input[type="color" i][list] {
+	color: rebeccapurple;
+	border-width: 3px;
+	padding: 1rem;
+	border-color: rgb(119,78,214);
+	width: 50%;
+}
+keygen, select {
+    border-radius: 0 !important;
+    font-size: 1.4rem;
+}
+@media screen and (max-width: 900px) {
+    div {
+			display: block !important;
+			width: 100% !important;
+    }
+  	.item:last-child .description{
+			display: block;
+			text-align: left;
+			max-width: 100%;
+			margin-left: auto;
+			margin-right: auto;
+		}
+}
+
+
