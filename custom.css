@@ -113,7 +113,7 @@ footer a:hover{
 	display: inline-block;
 	margin:1rem 0 0 1rem;
 	flex-grow: 1;
-	/* width: 30%; */
+	width: 30%;
 	border-top: 4px solid rebeccapurple;
 }
 .image{
