@@ -1,12 +1,10 @@
 <html>
-<head>
-	<link rel="stylesheet" type="text/css" href="custom.css"></head>
+<?php include 'head.php';?>
 <body>
 <?php include 'navigation.php';?>
 	<div class="wrap">
 		<h1>Classic Cars</h1>
 		<div class="offer">
-
 			<?php
 				$queryIndex = "SELECT * FROM productlines";
 				mysqli_query($db, $queryIndex) or die('Error querying database.');

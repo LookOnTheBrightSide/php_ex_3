@@ -1,28 +1,16 @@
 <html>
-<head>
-	<link rel="stylesheet" type="text/css" href="custom.css"></head>
+	<?php include 'head.php';?>
 <body>
-<?php include 'navigation.php';?>
+	<?php include 'navigation.php';?>
 	<div class="wrap">
-		<h1>Classic Cars</h1>
-		<div class="offer">
+	<div class="top">
+		<h1>Orders</h1>
+	</div><!-- /.top -->
 
-			<?php
-				$query = "SELECT * FROM productlines";
-				mysqli_query($db, $query) or die('Error querying database.');
-				$result = mysqli_query($db, $query);
-				$row = mysqli_fetch_array($result);
-				while ($row = mysqli_fetch_array($result)) {
-			?>
-				<div class="item">
-					<div class="image" id="<?php echo $row['productLine']; ?>"></div>
-					<span class="product" ><?php echo $row['productLine']?></span>
-					<span class="description"><?php echo $row['textDescription']?></span>
-				</div><?php
-				}
-				mysqli_close($db);
-			?>
-		</div>
+		<?php include 'modal.php';?>
+		<?php include 'in_process.php';?>
+		<?php include 'cancelled.php';?>
+		<?php include 'last_twenty.php';?>
 	</div>
 	<?php include 'footer.php';?>
 	<script src="app.js" type="text/javascript"></script>

@@ -1,6 +1,5 @@
 <html>
-<head>
-	<link rel="stylesheet" type="text/css" href="custom.css"></head>
+<?php include 'head.php';?>
 <body>
 	<?php include 'navigation.php';?>
 	<div class="wrap">
