@@ -16,18 +16,8 @@
 					$json = array();
 					while ($row = mysqli_fetch_array($result)) {?>
 			<tr>
-				<td id="o_n" class="price item_id">
-					<a href="#details"
-					id="<?php echo $row['orderNumber'];?>"
-					data-orderNumber="<?php echo $row['orderNumber'];?>"
-					data-orderDate="<?php echo $row['orderDate'];?>"
-					data-requiredDate="<?php echo $row['requiredDate'];?>"
-					data-shippedDate="<?php echo $row['shippedDate'];?>"
-					data-status="<?php echo $row['status'];?>"
-					data-comments="<?php echo $row['comments'];?>"
-					data-customerNumber="<?php echo $row['customerNumber'];?>"
-					onclick="fill_modal(this.id)"
-					><?php echo $row['orderNumber'];?></a>
+				<td class="price item_id" id="<?php echo $row['orderNumber'];?>" onclick="show_order_details(this.id)">
+					<?php echo $row['orderNumber'];?>
 				</td>
 				<td id="o_d" class="price"><?php echo $row['orderDate'];?></td>
 				<td id="sta" class="price"><?php echo $row['status'];?></td>
@@ -37,4 +27,3 @@
 	</table>
 </div>
 
- <!-- echo '<a class="button-view" href="detailed_view.php?id='.$row['id'].'">View</a>'; -->

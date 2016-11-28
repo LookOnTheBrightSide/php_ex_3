@@ -23,6 +23,9 @@ h5{
 }h6{
 	font-size: 1rem;
 }
+th{
+	text-align: left;
+}
 body{
 	background-color: whitesmoke;
 	min-height: 100vh;
@@ -98,6 +101,10 @@ footer a:hover{
 }
 .description{
 	font-size: 1.2rem;
+}
+.item_id:hover{
+	cursor: pointer;
+	background-color: rgba(119,78,214,0.1);
 }
 .item:last-child .description{
 	display: block;
@@ -178,8 +185,26 @@ tr:hover {
 	overflow-y: scroll;
 	min-height: 70vh;
 }
+#detailed_view{
+	width: 65vw;
+	margin-left: 1rem;
+	background-color: white;
+	padding: 1rem;
+}
+#detailed_view h3{
+	text-align: center;
+}
+#detailed_view *{
+	font-size: 12px;
+}
+.orders_page{
+	display: flex;
+	align-items: flex-start;
+	justify-content: space-between;
+}
 .display_table{
 	min-height: 50vh;
+	width: 30vw;
 }
 .choose_section{
 	margin: 1.5rem 0;
@@ -221,7 +246,8 @@ keygen, select {
     font-size: 1.4rem;
 }
 @media screen and (max-width: 900px) {
-    div {
+    div,
+    table {
 			display: block !important;
 			width: 100% !important;
     }
@@ -232,42 +258,6 @@ keygen, select {
 			margin-left: auto;
 			margin-right: auto;
 		}
-}
-/* MODAL */
-
-.modalDialog {
-    position: fixed;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
- 		background: rgba(0,0,0, 0.8);
-    z-index: 99999;
-    opacity:0;
-    transition: opacity 300ms ease-in;
-    pointer-events: none;
-}
-.modalDialog:target {
-    opacity:1;
-    pointer-events: auto;
-}
-.modalDialog > div {
-    /* width: 30%; */
-    position: relative;
-    margin: 10vh auto;
-    padding: 5px 20px 13px 20px;
-    border-radius: 3px;
-    background-color: rgb(255, 255, 255);
-    border-top: 5px solid rebeccapurple;
-}
-.close {
-    position: absolute;
-    right: -1rem;
-    top: 35%;
-    width: 30px;
-}
-.mod_window{
-	width: 80% !important;
 }
 
 @media screen and (max-width: 480px) {
